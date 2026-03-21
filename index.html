@@ -8,35 +8,44 @@
     <style>
       table,
       th,
-      td,
-      tr {
+      td {
         border-collapse: collapse;
         border: 2px solid #cdd3d8;
+        padding: 12px;
       }
 
-      #conteudo {
+      table {
+        width: 50%;
+        margin: 30px auto;
       }
 
       #header {
         background-color: #318247;
         color: white;
         font-size: 40px;
+        border-bottom: none;
       }
 
       #subtitle {
         background-color: #1c5a34;
         color: white;
         font-size: 18px;
+        border-top: none;
+      }
+
+      #menu {
+        vertical-align: top;
+      }
+
+      #menu table {
+        width: 100%;
       }
 
       #menu th {
         background-color: #dcdfe2;
       }
 
-      #menu table {
-        background-color: #eeeff0;
-      }
-
+      #menu table,
       #rodape {
         background-color: #edeef0;
       }
@@ -45,44 +54,40 @@
 
   <body>
     <table id="table">
-      <div>
-        <tr>
-          <th colspan="2" id="header">Meu Site</th>
-        </tr>
+      <tr>
+        <th colspan="2" id="header">Meu Site</th>
+      </tr>
 
-        <tr>
-          <th colspan="2" id="subtitle">Usando Tabelas em Html</th>
-        </tr>
-      </div>
+      <tr>
+        <th colspan="2" id="subtitle">Usando Tabelas em Html</th>
+      </tr>
 
-      <main id="main">
-        <tr id="menu">
-          <td>
-            <table>
-              <tr>
-                <th>Menu</th>
-              </tr>
-              <tr>
-                <td>
-                  <ul>
-                    <li><a href="">Início</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Contato</a></li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
-          </td>
+      <tr id="menu">
+        <td>
+          <table>
+            <tr>
+              <th>Menu</th>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li><a href="">Início</a></li>
+                  <li><a href="">Sobre</a></li>
+                  <li><a href="">Serviços</a></li>
+                  <li><a href="">Contato</a></li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </td>
 
-          <td>
-            <b>Bem vindo!</b>
-            <hr />
-            Esse é um exemplo de site criado utilizando tabelas Antigamente,
-            Esse era um método comum para estruturar páginas.
-          </td>
-        </tr>
-      </main>
+        <td>
+          <b>Bem vindo!</b>
+          <hr />
+          <p>Esse é um exemplo de site criado utilizando tabelas Antigamente</p>
+          <p>Esse era um método comum para estruturar páginas.</p>
+        </td>
+      </tr>
 
       <tr id="rodape">
         <th colspan="2">© 2026 - Site do Bernardo</th>
