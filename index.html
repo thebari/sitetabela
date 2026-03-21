@@ -1,78 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Tabela</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site Tabela</title>
+    <style>
+      table,
+      th,
+      td,
+      tr {
+        border-collapse: collapse;
+        border: 2px solid #cdd3d8;
+      }
 
-  <style>
-    table, th, td {
-      border-collapse: collapse;
-      border: 1px solid #ccc;
-    }
+      #conteudo {
+      }
 
-    #header {
-      background-color: #4CAF50;
-      color: white;
-      font-size: 30px;
-    }
+      #header {
+        background-color: #318247;
+        color: white;
+        font-size: 40px;
+      }
 
-    #subtitle {
-      background-color: #1a4d10;
-      color: white;
-      font-size: 16px;
-    }
+      #subtitle {
+        background-color: #1c5a34;
+        color: white;
+        font-size: 18px;
+      }
 
-    #menu {
-      background-color: #e6e6e6;
-    }
-  </style>
-</head>
+      #menu th {
+        background-color: #dcdfe2;
+      }
 
-<body>
-  <table>
+      #menu table {
+        background-color: #eeeff0;
+      }
 
-    <tr>
-      <th colspan="2" id="header"> Meu Site </th>
-    </tr>
+      #rodape {
+        background-color: #edeef0;
+      }
+    </style>
+  </head>
 
-    <tr>
-      <th colspan="2" id="subtitle"> Usando Tabelas em Html </th>
-    </tr>
+  <body>
+    <table id="table">
+      <div>
+        <tr>
+          <th colspan="2" id="header">Meu Site</th>
+        </tr>
 
-    <tr>
-      <td id="menu">
-        <table>
-          <tr>
-            <th>Menu</th>
-          </tr>
-          <tr>
-            <td>
-              <ul>
-                <li>Início</li>
-                <li>Sobre</li>
-                <li>Serviços</li>
-                <li>Contato</li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </td>
+        <tr>
+          <th colspan="2" id="subtitle">Usando Tabelas em Html</th>
+        </tr>
+      </div>
 
-      <td>
-        Bem vindo!
-        <hr>
-        Esse é um exemplo de site criado utilizando tabelas
-        Antigamente, Esse era um método comum para estruturar páginas.
-      </td>
+      <main id="main">
+        <tr id="menu">
+          <td>
+            <table>
+              <tr>
+                <th>Menu</th>
+              </tr>
+              <tr>
+                <td>
+                  <ul>
+                    <li><a href="">Início</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Serviços</a></li>
+                    <li><a href="">Contato</a></li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
 
-    </tr>
-    <tr>
-      <th colspan="2"> 2026 - Site do Bernardo</th>
-    </tr>
+          <td>
+            <b>Bem vindo!</b>
+            <hr />
+            Esse é um exemplo de site criado utilizando tabelas Antigamente,
+            Esse era um método comum para estruturar páginas.
+          </td>
+        </tr>
+      </main>
 
-  </table>
-</body>
-
+      <tr id="rodape">
+        <th colspan="2">© 2026 - Site do Bernardo</th>
+      </tr>
+    </table>
+  </body>
 </html>
